@@ -1,0 +1,37 @@
+Appium Data
+
+1. Github token: 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
+
+/Users/smahuzaifa/Library/Android/sdk
+
+
+2. Environment Variables 
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+export MAVEN_HOME=/Users/smahuzaifa/Documents/apache-maven-3.6.3
+export M2=$MAVEN_HOME/bin
+export ANDROID_HOME=/users/smahuzaifa/Library/Android/sdk
+export PATH=$PATH:/usr/local/git/bin:/usr/local/bin:
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+
+3. Where to check environment variable
+
+  1 .vi ~/.bash_profile (to open the bash profile where we can save data related to environment variables)
+2. Saving: source ~:.bash_profile (to save the data entered)
+
+4. Setting up appium inspector: (Server and Appium Inspector DMG file are different)
+Reference video: https://youtu.be/0WXRYqbUMZY
+How to find appPackage and appActivity:
+	a. Mac: adb shell dumpsys window | grep -E 'mCurrentFocus' 
+	b. Windows: adb shell dumpsys window | find “mCurrentFocus”
+
+5. Methods to import for tap and LongPressOptions
+import io.appium.java_client.TouchAction;
+import static io.appium.java_client.touch.TapOptions.tapOptions;
+import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
+
+6. Methods for time related data like long tap for these many seconds
+import static java.time.Duration.ofSeconds;

@@ -25,6 +25,11 @@ public class Gestures extends Introduction{
 		
 		WebElement expandlist = driver.findElementByXPath("//android.widget.TextView[@text='Expandable "
 				+ "Lists']");
+		/*
+		 * We are creating an onbject for webelement so that we can pass it's handler in withElement
+		 * method and make the code simpler instead of passing a very long code as parameter of those
+		 * method
+		 */
 		t.tap(tapOptions().withElement(element(expandlist))).perform();
 	
 		driver.findElementByAndroidUIAutomator("text(\"1. Custom Adapter\")").click();
