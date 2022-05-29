@@ -3,7 +3,7 @@ import java.net.MalformedURLException;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class ScrollAction extends Introduction {
+public class ScrollAction extends DesiredCapabilitesClass {
 
 	public static void main(String[] args) throws MalformedURLException {
 		// TODO Auto-generated method stub

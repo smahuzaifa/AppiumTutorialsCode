@@ -11,7 +11,7 @@ import io.appium.java_client.android.AndroidElement;
 import static java.time.Duration.ofSeconds;
 import static io.appium.java_client.touch.offset.ElementOption.element;
  
-public class Gestures extends Introduction{
+public class Gestures extends DesiredCapabilitesClass{
 
 	public static void main(String[] args) throws MalformedURLException {
 		// TODO Auto-generated method stub

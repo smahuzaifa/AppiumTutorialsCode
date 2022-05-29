@@ -9,7 +9,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class Introduction {
+public class DesiredCapabilitesClass {
 
 	public static AndroidDriver<AndroidElement> capabilities() throws MalformedURLException
 	{
@@ -17,7 +17,8 @@ public class Introduction {
 		File app = new File(appDir,"ApiDemos-debug.apk");
 		DesiredCapabilities cap =new DesiredCapabilities();
 		
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 5");
+		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 5");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "OnePlus ONEPLUS A6000");
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		

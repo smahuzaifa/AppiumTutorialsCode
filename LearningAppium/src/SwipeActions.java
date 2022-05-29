@@ -10,7 +10,7 @@ import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 import static java.time.Duration.ofSeconds;
 import static io.appium.java_client.touch.offset.ElementOption.element;
 
-public class SwipeActions extends Introduction {
+public class SwipeActions extends DesiredCapabilitesClass {
 
 	public static void main(String[] args) throws MalformedURLException {
 		// TODO Auto-generated method stub

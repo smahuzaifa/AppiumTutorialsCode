@@ -6,7 +6,7 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
-public class Basics extends Introduction{
+public class Basics extends DesiredCapabilitesClass{
 
 	public static void main(String[] args) throws MalformedURLException {
 		// TODO Auto-generated method stub
