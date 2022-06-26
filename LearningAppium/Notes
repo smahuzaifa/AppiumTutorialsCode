@@ -37,3 +37,10 @@ import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 
 6. Methods for time related data like long tap for these many seconds
 import static java.time.Duration.ofSeconds;
+
+
+7. For unable to load main class or class not found exception refer this video: https://youtu.be/_SOx6LvxjoY
+Steps: 
+Select project->Right click->Configure build path -> delete jre and any extra jars added -> apply and close
+Build project from right click then refresh and then also update the maven project
+Then add the JRE and extra jars and then apply it, refresh, update the maven project and then build project

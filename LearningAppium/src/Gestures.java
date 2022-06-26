@@ -37,6 +37,7 @@ public class Gestures extends DesiredCapabilitesClass{
 		WebElement pn = driver.findElementByAndroidUIAutomator("text(\"People Names\")");
 		t.longPress(longPressOptions().withElement(element(pn)).withDuration(ofSeconds(2)))
 		.release().perform();
+		//We have to release after long press
 		//Thread.sleep(100);
 		System.out.println(driver.findElementByAndroidUIAutomator("text(\"Sample menu\")").isDisplayed());
 	}
