@@ -23,9 +23,9 @@ public class DragAndDropAction extends DesiredCapabilitesClass {
 		WebElement destination = driver.findElementsByCssSelector("android.view.View").get(1);
 		//t.longPress(longPressOptions().withElement(element(source))).moveTo(element(destination)).release().perform();
 		/*
-		 * We can use longPress in another way if only we want to long press (no toher action like
+		 * We can use longPress in another way if only we want to long press (no to other action like
 		 * hold or wait should be there
-		 * t.longPress(lement(source)).moveTo(element(destination)).release().perform();
+		 * t.longPress(element(source)).moveTo(element(destination)).release().perform();
 		 */
 		t.longPress(element(source)).moveTo(element(destination)).release().perform();
 
